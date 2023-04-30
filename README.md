@@ -1,2 +1,2 @@
 # estrutura-de-dados
-Repositório de estudos da disciplina de Estrutura de Dados com a linguagem C.
+Repositório de estudos sobre Estrutura de Dados com a linguagem C.
