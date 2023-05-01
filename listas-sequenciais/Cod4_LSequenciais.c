@@ -25,7 +25,7 @@ int main(void) {
   //implementação da função criar
   criar(&lista1,5); criar(&lista2,3);
 
-  //implementação das funçoes com a lista1
+  //funçoes com a lista1
   printf("Operando com a lista1 :\n");
   inserir_ord(&lista1,3); inserir_ord(&lista1,1); inserir_ord(&lista1,2);
   imprimir(&lista1);
@@ -41,7 +41,7 @@ int main(void) {
   printf("---------------------------------------");
 
 
-  //implementação das funçoes com a lista2
+  //funçoes com a lista2
   printf("\nOperando com a lista2 :\n");
   inserir_ord(&lista2,30); inserir_ord(&lista2,10); inserir_ord(&lista2,20);
   imprimir(&lista2);
