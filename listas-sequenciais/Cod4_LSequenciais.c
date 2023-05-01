@@ -22,7 +22,7 @@ int main(void) {
   //declarando as listas
   LISTA lista1, lista2;
 
-  //implementação da função criar
+  //função criar
   criar(&lista1,5); criar(&lista2,3);
 
   //funçoes com a lista1

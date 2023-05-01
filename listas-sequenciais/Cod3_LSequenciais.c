@@ -16,7 +16,7 @@ void imprimir();
 void apagar();
 
 int main(void) {
-  // implementando a função "inserir_ord"
+  //função "inserir_ord"
   inserir_ord("ab"); inserir_ord("af"); inserir_ord("ac");
   printf("Lista Atual: ");
   imprimir();
@@ -29,12 +29,12 @@ int main(void) {
   printf("Lista Atual: ");
   imprimir();
   
-  //implementando a função remover
+  // função remover
   remover("af");remover("ab");
   printf("Lista Atual: ");
   imprimir();
   
-  //implementando as funções buscar, imprimir, tamanho
+  //funções buscar, imprimir, tamanho
   printf("O indice de bl é %d ",buscar("bl"));
   printf("e o tamanho atual da lista é %d.\n",tamanho());
   printf("O indice de bg é %d\n",buscar("bg"));
@@ -42,7 +42,7 @@ int main(void) {
   printf("Lista Atual: ");
   imprimir();
 
-  // implementando as função obter
+  //função obter
   char* x = obter(0);
   printf("No indice 0 temos "); 
   for(int i = 0; i < strlen(x); i++){
@@ -57,7 +57,7 @@ int main(void) {
   }
   printf("\n");
   
-  //implementando a função apagar
+  //função apagar
   apagar();
   printf("Lista Atual: ");
   imprimir();

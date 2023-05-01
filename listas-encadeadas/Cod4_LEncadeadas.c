@@ -24,11 +24,11 @@ void imprimir(LISTA *lst);
 
 
 int main(){
-  LISTA lst1, lst2; //criação de variaveis tipo LISTA
-  inicializar(&lst1);inicializar(&lst2); //Implementação  da função inicializar
+  LISTA lst1, lst2; // criação de variaveis tipo LISTA
+  inicializar(&lst1);inicializar(&lst2); // função inicializar
   
-  //Lista1
-  //Impletação da função inserir_ord e imprimir
+  // Lista1
+  // função inserir_ord e imprimir
   printf("LISTA_1 :");
   for(int i = 3; i >= 0; i--)
     inserir_ord(&lst1,i);
@@ -38,23 +38,23 @@ int main(){
     inserir_ord(&lst1,i*-1);
   //imprimir(&lst1);
   
-  //Implementação da função remover
+  // função remover
   remover(&lst1,2);remover(&lst1,-2);
   //imprimir(&lst1);
 
-  //Implementação da função buscar e obter
+  // função buscar e obter
   //printf("O elemento 3 está no endereço de memória %p\n",buscar(&lst1,3));
   //printf("No endereço de memória %p está o elemento %d\n",buscar(&lst1,3),obter(buscar(&lst1,3)));
   imprimir(&lst1);
   
-  //Implementaçao da função tamanho e apagar
+  //função tamanho e apagar
   //printf("O tamanho atual da LISTA_1 é de %d NÓS\n",tamanho(&lst1));
   //apagar(&lst1);
   //printf("Depois de apagá-la o tamanho é de %d NÓS\n\n",tamanho(&lst1));
 
 
   //Lista2
-  //Impletação da função inserir_ord e imprimir
+  //função inserir_ord e imprimir
   printf("LISTA_2 :");
   for(int i = 5; i >= 0; i--)
     inserir_ord(&lst2,i*10);
@@ -64,16 +64,16 @@ int main(){
     inserir_ord(&lst2,i*-10);
   //imprimir(&lst2);
   
-  //Implementação da função remover
+  // função remover
   remover(&lst2,20);remover(&lst2,-20);
   //imprimir(&lst2);
 
-  //Implementação da função buscar e obter
+  // função buscar e obter
   //printf("O elemento 30 está no endereço de memória %p\n",buscar(&lst2,30));
   //printf("No endereço de memória %p está o elemento %d\n",buscar(&lst2,30),obter(buscar(&lst2,30)));
   imprimir(&lst2);
   
-  //Implementaçao da função tamanho e apagar
+  //função tamanho e apagar
   //printf("O tamanho atual da LISTA_2 é de %d NÓS\n",tamanho(&lst2));
   //apagar(&lst2);
   //printf("Depois de apagá-la o tamanho é de %d NÓS\n\n",tamanho(&lst2));
@@ -82,23 +82,23 @@ int main(){
   
   // FUSÃO LISTA_1 COM LISTA_2
   
-  //Implementação da nova função juntar e imprimir
+  // nova função juntar e imprimir
   LISTA nova_lst = juntar_ord(&lst1, &lst2);
   printf("FUSÃO ORDENADA LISTA_1 COM LISTA_2 :");
   imprimir(&nova_lst);
 
-  //Implementação da função remover na nova lista
+  // função remover na nova lista
   remover(&nova_lst,1);remover(&nova_lst,0);remover(&nova_lst,50);remover(&nova_lst,40);remover(&nova_lst,-30);remover(&nova_lst,30);remover(&nova_lst,-3);
 
   printf("\nApós remover alguns elementos da nova lista : ");
   imprimir(&nova_lst);
 
-  //Implementação da função buscar e obter
+  // função buscar e obter
 
   printf("\nO elemento 3 da NOVA_LISTA está no endereço de memória %p\n",buscar(&nova_lst,3));
   printf("No endereço de memória %p da NOVA_LISTA está o elemento %d\n",buscar(&nova_lst,3),obter(buscar(&nova_lst,3)));
 
-  //Implementaçao da função tamanho e apagar
+  //função tamanho e apagar
   printf("\nO tamanho atual da NOVA_LISTA é de %d NÓS\n",tamanho(&nova_lst));
   apagar(&nova_lst);
   printf("Depois de apagá-la o tamanho é de %d NÓS\n\n",tamanho(&nova_lst));
